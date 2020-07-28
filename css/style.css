@@ -197,7 +197,7 @@ footer{
     font-size: 54px;
     margin: .3rem;
     padding: 1.3rem;
-    text-shadow: blanchedalmond 4px 1px 5px;
+    /* text-shadow: blanchedalmond 4px 1px 5px; */
 }
 .secondary{
     font-family: 'Prata', serif;
