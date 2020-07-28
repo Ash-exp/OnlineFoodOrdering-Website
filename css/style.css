@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+#navigation{
+    top: 0px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    z-index: 2;
+}
+#navigation::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: .6;
+        /* z-index: -1; */
+        top: 0px;
+        bottom: 0px;
+}
+#logo img{
+    filter: invert(100%);
+    height: 35px;
+    margin-left: 10px;
+    padding: 4px 9px;
+}
+#navigation ul{
+    display: flex;
+    margin: auto;
+    list-style: none;
+    z-index: 2;
+}
+.iteam{
+    justify-content: center;
+    align-items: center;
+    padding: 0px 34px;
+    margin: 2px;
+}
+#navigation li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2.5px;
+}
+#navigation li .iteam::before{
+    content: "";
+    position: relative;
+    background-color: thistle;
+
+}
+ #navigation li a:hover ,.iteam:hover{
+    color:rgb(230, 230, 230);
+    border-radius: 4px;
+    transform: scale(1.1);
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 424px ;
+    width: 100%;
+    background: url("../Img/bg 1.jpg")no-repeat center center/cover;
+    opacity: 0.65;
+    z-index: -1;
+}
+#home{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.3rem;
+}
+.btn{
+    border: none;
+    background-image: linear-gradient(to right, #FF5722 0%, #F44336 51%, #e6ae45 100%);
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    text-shadow: rgb(31, 31, 31) 4px 1px 3px;
+    box-shadow: rgb(31, 31, 31) 4px 4px 3px;
+}
+#containor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    padding: 1.2rem;
+}
+#containor img{
+    height:177px ;
+    width: 240px;
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 34px;
+    padding: 34px;
+    border:2px solid crimson;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(245, 237 ,237); 
+    transition: border .1s linear;
+    
+}
+.order:hover{
+    border-width: 3px;
+}
+
+#clints{
+    position: relative;
+    display: flex; 
+    height: 222px;
+}
+#clints::before{
+    content: "";
+    position: absolute;
+    height: 222px;
+    width: 100%;
+    background: url("../Img/bg 2.jpg")no-repeat center center/cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+.logo >img{
+    max-width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 25%;
+    margin: 1.1rem;
+    padding: 1.5rem;
+}
+#contact{
+    font-family: 'Unica One', cursive;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 1.1rem;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("../Img/contact.jpg")no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .9;
+
+}
+#contact div{
+    padding: .5rem;
+}
+#contact input,
+#contact textarea{
+    width: 100%;
+    padding: .5rem;
+    font-size: 16px;
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: .5rem;
+}
+.center{
+    text-align: center;
+}
+.primary{
+    font-family: 'Unica One', cursive;
+    font-size: 54px;
+    margin: .3rem;
+    padding: 1.3rem;
+    text-shadow: blanchedalmond 4px 1px 5px;
+}
+.secondary{
+    font-family: 'Prata', serif;
+    color: black;
+    margin: 0.5rem 3rem;
+    padding: 1.1rem 1.3rem;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    
+}
+#services> div:nth-child(1){
+    color:  rgb(232, 98, 0);
+    background-color: bisque;
+    animation: blink 1.3s infinite;
+    margin: 0px;
+    line-height: 120px;
+}
+@keyframes blink{
+    0%{color:rgb(232, 98, 0); ;}
+    49%{color: rgb(232, 98, 0);;}
+    60%{color: transparent;}
+    99%{color: transparent;}
+    100%{color: rgb(232, 98, 0);}    
+}
+#containor h2{
+    font-family: 'Unica One', cursive;
+    font-size: 1.7rem;
+}
+
