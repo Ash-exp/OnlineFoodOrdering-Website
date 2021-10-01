@@ -111,16 +111,16 @@ html{
     justify-content: center;
     margin: 34px;
     padding: 34px;
-    border:2px solid crimson;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 10px;
     height: 400px;
     width: 400px;
     background-color: rgb(245, 237 ,237); 
-    transition: border .1s linear;
+    transition:  margin-top .3s linear;
     
 }
 .order:hover{
-    border-width: 3px;
+    margin-top: -10px;
 }
 
 #clints{
@@ -181,6 +181,8 @@ html{
     width: 100%;
     padding: .5rem;
     font-size: 16px;
+    border: none;
+    border-radius: 3px;
 }
 footer{
     background: black;
